@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: filament_app
+    restart: unless-stopped
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    depends_on:
+      mysql:
+        condition: service_healthy  # Ensures MySQL is fully started
+    networks:
+      - filament_net
+
+  mysql:
+    image: mysql:8.0
+    container_name: filament_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: my_filament_db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: laravel
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - filament_net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 5
+
+
+  nginx:
+    image: nginx:latest
+    container_name: filament_nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - filament_net
+
+networks:
+  filament_net:
+
+volumes:
+  mysql_data:
