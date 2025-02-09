@@ -20,16 +20,16 @@ This project is a **Laravel Filament Admin Panel** for managing **Tracks, Artist
 ![Dashboard](https://live.staticflickr.com/65535/54316386701_6a22afceb0_b.jpg)
 
 ### **🔹 Artists Management**
-![Artists](ADD_IMAGE_URL_HERE)
+![Artists](https://live.staticflickr.com/65535/54316623253_1183578435_b.jpg)
 
 ### **🔹 Albums Management**
-![Albums](ADD_IMAGE_URL_HERE)
+![Albums](https://live.staticflickr.com/65535/54316616284_8d8b6edca6_b.jpg)
 
 ### **🔹 Tracks Management**
-![Tracks](ADD_IMAGE_URL_HERE)
+![Tracks](https://live.staticflickr.com/65535/54316386711_1580846c57_b.jpg)
 
 ### **🔹 Genres Management**
-![Genres](ADD_IMAGE_URL_HERE)
+![Genres](https://live.staticflickr.com/65535/54316386721_55a140c294_b.jpg)
 
 ---
 
