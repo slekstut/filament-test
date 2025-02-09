@@ -41,6 +41,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 TracksOverview::class,
+                \App\Filament\Widgets\LatestTracks::class,
             ])
             ->middleware([
                 EncryptCookies::class,
