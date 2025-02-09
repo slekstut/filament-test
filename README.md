@@ -1,3 +1,46 @@
+# 🎵 Music Management Dashboard (Filament)
+
+## 📌 Project Overview
+This project is a **Laravel Filament Admin Panel** for managing **Tracks, Artists, Albums, and Genres**.
+
+## 🚀 Features
+- Manage **Artists** (name, country, image, description)
+- Manage **Albums** (title, artist, cover image, release date, status)
+- Manage **Tracks** (title, album, artist, genre, duration, status)
+- Manage **Genres** (name, description)
+- **Dashboard Widgets** for insights
+- **Relation Managers** for linking Tracks, Albums, and Artists
+- **File Uploads** for images (artists & albums)
+- **Status Indicators** for active and archived tracks
+
+---
+
+## 🎨 UI Screenshots
+### **🔹 Admin Dashboard**
+![Dashboard](https://live.staticflickr.com/65535/54316386701_6a22afceb0_b.jpg)
+
+### **🔹 Artists Management**
+![Artists](ADD_IMAGE_URL_HERE)
+
+### **🔹 Albums Management**
+![Albums](ADD_IMAGE_URL_HERE)
+
+### **🔹 Tracks Management**
+![Tracks](ADD_IMAGE_URL_HERE)
+
+### **🔹 Genres Management**
+![Genres](ADD_IMAGE_URL_HERE)
+
+---
+
+## 🔧 Installation Guide
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/YOUR_REPO_LINK.git
+cd YOUR_PROJECT_FOLDER
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
